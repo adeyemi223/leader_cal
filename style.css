@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator{
+    background-color: #101010;
+    width: 30em;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.display{
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    height: 6em;
+    line-height: 8em;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 0 2rem;
+}
+
+.controls{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.7em 0;
+    margin: auto 0.5em;
+}
+
+.controls button{
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    height: 5.5rem;
+    width: 5.5rem;
+    cursor: pointer;
+    margin: 0.2em;
+    border: unset;
+    border-radius: 50%;
+}
+
+.controls button:hover{
+    background-color: #333333;
+}
+
+.controls .btn_1{
+    background: #222;
+    color: #1de10fd6;
+}
+
+.controls .btn{
+    background-color: #222222;
+    color: #1de10fd6;
+}
+
+.controls .btn_1:hover{
+    background-color: #fff;
+}
+
+.controls .btn:hover,
+.controls .btn:focus{
+    background-color: #fff;
+}
+
+@media screen and (max-width:480px) {
+    .calculator {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .calculator {
+        width: 100%;
+        margin: 0auto;
+    }
+
+    .controls {
+        grid-template-columns: repeat(4, 1fr); /* Keep 4 columns on 375px screens */
+        gap: 0.3rem;
+    }
+
+    .controls button {
+        font-size: 1.5em;
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}
